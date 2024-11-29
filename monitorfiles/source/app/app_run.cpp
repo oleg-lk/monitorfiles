@@ -14,7 +14,7 @@ void Application::run() {
 
     char buffer[1024];
     int nextWd = -1;
-	while (true) {
+    while (true) {
         int length = read(inotifyFd_, buffer, sizeof(buffer));
         if (length < 0) {
             perror("Ошибка чтения из inotify");
