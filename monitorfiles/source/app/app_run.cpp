@@ -8,9 +8,9 @@
 
 void Application::run() {
 
-	if (!backupFiles()) {
-		return;
-	}
+    if (!backupFiles()) {
+        return;
+    }
 
     char buffer[1024];
     int nextWd = -1;
@@ -40,5 +40,5 @@ void Application::run() {
             }
             i += sizeof(inotify_event) + event->len;
         }
-	}
+    }
 }
